@@ -1,0 +1,21 @@
+﻿<Window x:Class="Suhankin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Suhankin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="295*"/>
+            <RowDefinition Height="60*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#6A5ACD"></Grid>
+        <Grid Grid.Row="2" Background="#6A5ACD"></Grid>
+        <TextBlock Text="ВелосипедДрайв" Margin="0,0,25,0" FontSize="35" HorizontalAlignment="Center" FontFamily="Arial"></TextBlock>
+        <Frame x:Name="MainFrameWindow" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+        <Image Source="Image\Icon.png" Margin="0,0,650,0" ></Image>
+    </Grid>
+</Window>
